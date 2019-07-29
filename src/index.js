@@ -1,77 +1,21 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Home from "./components/Home";
+import News from "./components/News"
 
 
 class App extends Component {
   render() {
     return( 
            <div>
-           <section className="main-banner" id="home">
-           <div className="header-top-w3layouts text-right">
-               <ul id="menu">
-                   <li>
-                       <input id="check02" type="checkbox" name="menu" />
-                       <label for="check02"><span className="fa fa-bars" aria-hidden="true"></span></label>
-                       <ul className="submenu">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="#about" className="scroll">About</a></li>
-                           <li><a href="#team" className="scroll">Team</a></li>
-                           <li><a href="#service" className="scroll">Services</a></li>
-                           <li><a href="#gallery" className="scroll">Gallery</a></li>
-                           <li><a href="#testimonials" className="scroll">Testimonials</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                       </ul>
-                   </li>
-               </ul>
-           </div>
-           <div className="container">
-               <div className="baner-info-w3ls text-left">
-                   <h1><a href="index.html">Exert Design</a></h1>
-                   <h6 className="mx-auto mt-4">Porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est</h6>
-                   <a className="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="#about" role="button">Learn More</a>
-                   <div className="banner-high-lights text-left">
-                       <div className="rotate">
-                           <a href="#about" className="scroll">
-                                  <span className="fa fa-long-arrow-down"></span>                 
-               </a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </section>
+
+           <Home />
+
+       <About />
        
-       <section className="wedo py-lg-5 py-5" id="about">
-           <div className="container py-lg-5">
-               <div className="text-center">
-                   <h3 className="tittle_head">Integer porttitor mollisar </h3>
-                   <p className="main_p mt-4 mb-4 pt-2 text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur ac ipsum </p>
-               </div>
-               <div className="wedo_top text-center py-5">
-                   <ul>
-                       <li><span className="fa fa-cog"></span></li>
-                       <li><span className="fa fa-code"></span></li>
-                       <li><span className="fa fa-copy"></span></li>
-                   </ul>
-               </div>
-           </div>
-       </section>
-       <section className="banner-bottom" id="news">
-           <div className="banner-top row middle-grids">
-               <div className="col-lg-4 advantage-grid-info1">
-                   <div className="advantage_left2 text-center">
-     
-                   </div>
-               </div>
-               <div className="col-lg-8 advantage-grid-info">
-                   <div className="advantage_left">
-                       <h3>Integer porttitor mollisar lorem, at molestie</h3>
-                       <p className="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est.</p>
-                   </div>
-               </div>
-           </div>
-       </section>
-       
+      <News /> 
        <section className="banner-bottom temp-btm">
            <div className="banner-top row middle-grids">
                <div className="col-lg-8 advantage-grid-info">
